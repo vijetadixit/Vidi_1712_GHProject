@@ -1,0 +1,24 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: Vidi_1712_GHProject
+  gitServerName: vidi
+  gitUrl: https://github.com/vijetadixit
+  gitUsername: vijetadixit
+  gitBranch: main
+configurationVariables:
+  jdbc.jdbcTestPool.waitingThread: "0"
+  jdbc.jdbcTestPool.minConns: "0"
+  jdbc.jdbcTestPool.expireTime: "60000"
+  jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
+  jdbc.jdbcTestPool.maxConns: "10"
+  jdbc.jdbcTestPool.userid: root
+  jdbc.jdbcTestPool.driverAlias: MySQL Database Java Connector Driver
+  jdbc.jdbcTestPool.spyenabled: "false"
+  jdbc.jdbcTestPool.snoopenabled: "false"
+  jdbc.jdbcTestPool.password: "{AES}er+I3U8nDVm8F4DBRST1+A=="
+  jdbc.jdbcTestPool.spyparms: SpyAttributes=(log=(file)logs/spy/jdbcTestPool.log;logTName=yes;timestamp=yes)
+  jdbc.jdbcTestPool.dbURL: jdbc:mysql://mysql.test.local:3306/webm
+  jdbc.jdbcTestPool.poolThreshold: "0"
+  jdbc.jdbcTestPool.useSSL: "false"
